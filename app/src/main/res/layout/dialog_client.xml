@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textViewClientTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:text="CLIENTE"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <EditText
+            android:id="@+id/editTextClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Ingresar Cliente"
+            android:maxLength="15"
+            android:textSize="30dp">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <Button
+            android:id="@+id/alerGenericoBtnAceptar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:text="ACEPTAR"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/alerGenericoBtnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="CANCELAR"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
